@@ -1,0 +1,1921 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ /* CLASES GENERALES */
+
+
+
+.buttons{
+    background-color:#2a363b;
+    padding: 5%;
+    color:aliceblue;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.buttons:hover{
+    font-size: 30px;
+}
+
+.card{
+    position: relative;
+    max-width: 405px;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    background-color:aliceblue;
+    color:rgb(0, 0, 0);
+    margin: 0% 5%;
+    border: 1px solid rgb(176, 176, 176);
+}
+
+h2{
+    color: orange;
+}
+
+/* CABECERA */
+
+header section{
+    background-color: #219ebc;
+    text-align: center;
+    color:aliceblue;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3%;
+    height: 40%;
+}
+
+#logo{
+    background-color:#219ebc;
+    width: 18%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#logoImg{
+    width: 170%;
+}
+
+#nombreTienda{
+    display: flex;
+    background-color: #219dbc00;
+    width: 50%;
+    height: 50%;
+    align-items: end;
+    justify-content: center;
+}
+
+#buscador{
+    border-radius: 16px;
+    outline: none;
+    text-align: left;
+    width: 120%;
+    margin-left: 15%;
+    padding: 2% 0% 2% 5%;
+}
+
+#cesta{
+    width: 80%;
+    
+    
+}
+
+#carrito{
+    background-color: #219ebc;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+/* BARRA NAVEGACION */
+
+.barraNav{
+    background-color: #2a363b;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15%;
+}
+
+.barraNav a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.barraNav a:hover{
+    background-color: orange;
+    border-radius: 5px;
+    padding: 0% 1%;
+    background-color: orange;
+    color: #2a363b;
+}
+
+/* OFERTAS */
+
+#cajaOfertas{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(2,161,217,1) 90%);
+    width: 100%;
+    height: 100%;
+}
+
+#imgofer{
+    opacity: 0.9;
+    width: 60%;
+    height: 85%;
+}
+
+/* SERVICIOS */
+
+
+#slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    background-color:orange;
+    width: 100%;
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+#slider>ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#slider>ul.slider {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 300px;
+}
+
+#slider>ul.slider h1 {
+    position: absolute;
+    background-color: rgba(223, 223, 223, 0.6);
+    padding: 20px;
+    border-radius: 16px;
+    opacity: 0.8;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+}
+
+#slider>ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff;
+}
+
+#slider>ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit:cover;
+}
+
+#slider>ul.slider li:first-child {
+    opacity: 1;
+}
+
+#slider>ul.slider li:target {
+    opacity: 1;
+}
+
+#slider>.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+#slider>.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+#slider>.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color:#023047;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+/* PRODUCTOS */
+
+.market a{
+    text-decoration: none;
+}
+
+.market{
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    padding: 5% 0%;
+}
+
+.market div{
+    border-radius: 20px;
+    margin-bottom: 5%;
+}
+
+.card article{
+    display: flex;
+    height: 80%;
+    width: 40%;
+    margin-left: 4%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ESTRELLAS */
+
+.form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+.form span {
+    text-align: center;
+}
+
+.form label {
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    color: grey;
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+label:hover ~ label {
+    color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+    color: orange;
+}
+
+/* TEXTO CARDS */
+
+.precio{
+    font-size: 10px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.textoProducto{
+    background-color:aliceblue;
+    width: 55%;
+    height: 80%;
+}
+
+/* IMÁGENES CARDS */
+
+/* 1 */
+
+.imgProduct{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+#ultimaCard{
+    margin-bottom: 0px;
+}
+
+/* OPINIONES */
+
+#cardOpiniones{
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    
+}
+
+.opiniones{
+    background-color: #219ebc;
+    padding: 15px 10px;
+    height: 280px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+#opinion1{
+    background-color: aliceblue;
+    height: 250px;
+    width: 307px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+#opinion2{
+    background-color: aliceblue;
+    height: 250px;
+    width: 307px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+#opinion3{
+    background-color: aliceblue;
+    height: 250px;
+    width: 307px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+#miley{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+/* FOOTER */
+
+#botonRestart{
+    /* background-color: orange; */
+    align-self: self-end;
+    margin-right: 20px;
+    width: 10%;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #023047;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;;
+    padding-top: 5%;
+    width: 100%;
+}
+
+footer div p{
+    margin: 1.5%;
+    width: 100%;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+    color: aliceblue;
+    margin-bottom: 5%;
+    max-width: 500px;
+    margin-top: 55px;
+}
+
+#enlaceEnvio{
+    color: orange;
+    font-size: 20px;
+}
+
+#enlaceEnvio:hover{
+    font-size: 25px;
+    color: orangered;
+}
+
+/* FORMULARIOS */
+
+#preguntas{
+    max-width:  600px;
+}
+
+#contacto{
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+#name{
+    border-radius: 12px;
+    color:#023047;
+    padding: 2%;
+    width: 100%;
+}
+
+#dudas{
+    border-radius: 12px;
+    width: 100%;
+    height: 100px;
+    padding: 2%;
+}
+#email{
+    border-radius: 12px;
+    padding: 2%;
+    width: 100%;
+}
+#submit{
+    border-radius: 8px;
+    padding: 4% 7%;
+    font-size: 20px;
+    background-color: orangered;
+    color: aliceblue;
+}
+
+#submit:hover{
+    border-radius: 6px;
+    padding: 4% 7%;
+    font-size: 20px;
+    background-color:aliceblue;
+    color:#023047;
+}
+
+/* MEDIA HEADER */
+
+/* ENCABEZADO */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header section{
+        background-color: #219ebc;
+        text-align: center;
+        color:aliceblue;
+    }
+    
+    .cabecera{
+        display: flex;
+        align-items: center;
+    }
+    
+    #logo{
+        background-color:#219ebc;
+        width: 13%;
+    }
+    
+    #logoImg{
+        width: 140%;
+    }
+    
+    #nombreTienda{
+        display: flex;
+        background-color: #219dbc00;
+        width: 60%;
+        height: 50%;
+        margin: 20px 90px 0px 0px;
+    }
+    
+    #buscador{
+        border-radius: 16px;
+        outline: none;
+        text-align: left;
+        width: 120%;
+        padding: 2% 0% 2% 5%;
+    }
+    
+    #cesta{
+        width: 100%;
+        margin-top: 8px;
+    }
+    
+    #carrito{
+        background-color: #219ebc;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1100px) {}
+
+@media screen and (min-width: 1100px) and (max-width: 1460px) {}
+
+/* BARRA NAV */
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+    .barraNav{
+        background-color: #2a363b;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 45px;
+    }
+
+    .barraNav a{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1460px) {
+    .barraNav{
+        background-color: #2a363b;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 70px;
+    }
+
+    .barraNav a{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+/* SEPARADORES */
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+    .buttons{
+        background-color:#2a363b;
+        padding: 3%;
+        color:aliceblue;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .buttons{
+        background-color:#2a363b;
+        padding: 3%;
+        color:aliceblue;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1560px){
+    .buttons{
+        background-color:#2a363b;
+        padding: 2%;
+        color:aliceblue;
+        width: 100%;
+        text-align: center;
+        font-size: 45px;
+    }
+}
+
+/* SLIDER */
+
+@media screen and (min-width: 1024px){
+    #slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+        background-color:orange;
+        width: 100%;
+        padding: 18px;
+        box-sizing: border-box;
+        height: 450px;
+    }
+    
+    #slider>ul,li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    #slider>ul.slider {
+        position: relative;
+        max-width: 800px;
+        width: 100%;
+        height: 300px;
+    }
+    
+    #slider>ul.slider h1 {
+        position: absolute;
+        background-color: rgba(223, 223, 223, 0.6);
+        padding: 10px;
+        left: 50%;
+        top: 100px;
+        transform: translate(-50%, -50%);
+    }
+    
+    #slider>ul.slider li {
+        position: absolute;
+        left: -80px;
+        top: 0px;
+        opacity: 0;
+        width: inherit;
+        height: inherit;
+        transition: opacity .5s;
+        background: #fff;
+    }
+    
+    #slider>ul.slider li img {
+        width: 120%;
+        height: 350px;
+        object-fit: cover;
+    }
+    
+    #slider>ul.slider li:first-child {
+        opacity: 1;
+    }
+    
+    #slider>ul.slider li:target {
+        opacity: 1;
+    }
+    
+    #slider>.menu {
+        text-align: center;
+        margin: 40px;
+    }
+    
+    #slider>.menu li {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    #slider>.menu li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color:#023047;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 100%;
+        margin-top: 330px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    #slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+        background-color:orange;
+        width: 100%;
+        padding: 18px;
+        box-sizing: border-box;
+        height: 600px;
+    }
+    
+    #slider>ul,
+    li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    #slider>ul.slider {
+        position: relative;
+        max-width: 800px;
+        width: 100%;
+        height: 300px;
+    }
+    
+    #slider>ul.slider h1 {
+        position: absolute;
+        background-color: rgba(223, 223, 223, 0.6);
+        padding: 40px;
+        left: 70%;
+        top: 100px;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+    }
+    
+    #slider>ul.slider li {
+        position: absolute;
+        left: -280px;
+        top: 0px;
+        opacity: 0;
+        width: inherit;
+        height: inherit;
+        transition: opacity .5s;
+        background: #fff;
+    }
+    
+    #slider>ul.slider li img {
+        width: 170%;
+        height: 510px;
+        object-fit: cover;
+    }
+    
+    #slider>ul.slider li:first-child {
+        opacity: 1;
+    }
+    
+    #slider>ul.slider li:target {
+        opacity: 1;
+    }
+    
+    #slider>.menu {
+        text-align: center;
+        margin: 20px;
+    }
+    
+    #slider>.menu li {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    #slider>.menu li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color:#023047;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 100%;
+        margin-top: 500px
+    }
+}
+
+/* MEDIA MARKET */
+
+@media screen and (min-width: 320px) and (max-width: 450px){
+    
+    .botonCompra{
+        background-color: orangered;
+        padding: 2%;
+        color:aliceblue;
+        border-radius: 6px;
+        margin-left: 0%;
+        font-size: px;
+        text-decoration: none;
+    }
+    .card{
+        width: 90%;
+        display: flex;
+        height: 200px;
+        width: 90%;
+        background-color:aliceblue;
+        color:rgb(0, 0, 0);
+        margin: 0% 0% 0% 4%;
+        border: 1px solid rgb(176, 176, 176);
+    }
+
+    .precio{
+        font-size: 15px;
+        color: #2a363b;
+    }
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 540px) {
+    
+    .card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0% 0%;
+        height: 410px;
+        background-color:aliceblue;
+        color:rgb(0, 0, 0);
+        margin: 0% 0% 0% 6.5%;
+        border: 1px solid rgb(176, 176, 176);
+    }
+
+    .market{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: orange;
+        padding: 5% 0%;
+        margin-top: 5%;
+    }
+
+    .card article{
+        height: 50%;
+        width: 50%;
+        border-radius: 10px;
+        margin-right: 30%;
+    }
+    
+    h2{
+        color: orange;
+    }
+
+    .precio{
+        font-size: 20px;
+        color: #2a363b;
+    }
+    
+    .botonCompra{
+        background-color: orangered;
+        padding: 4%;
+        color:aliceblue;
+        border-radius: 12px;
+        margin-left: 10%;
+        font-size: 110%;
+        text-decoration: none;
+    }
+    
+    .textoProducto{
+        background-color:aliceblue;
+        width: 75%;
+        font-size: 20px;
+    }
+
+    .imgProduct{
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 530px) and (max-width: 770px) {
+    
+    .card{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        padding: 0% 0%;
+        height: 410px;
+        background-color:aliceblue;
+        color:rgb(0, 0, 0);
+        margin: 0% 0% 0% 3.5%;
+        border: 1px solid rgb(176, 176, 176);
+    }
+
+    .market{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: orange;
+        padding: 5% 0%;
+    }
+
+    .card article{
+        height: 50%;
+        width: 50%;
+        border-radius: 10px;
+        margin-right: 30%;
+    }
+    
+    h2{
+        color: orange;
+    }
+
+    .precio{
+        font-size: 20px;
+        color: #2a363b;
+    }
+    
+    .botonCompra{
+        background-color: orangered;
+        padding: 4%;
+        color:aliceblue;
+        border-radius: 12px;
+        margin-left: 3%;
+        font-size: 100%;
+        text-decoration: none;
+    }
+    
+    .textoProducto{
+        background-color:aliceblue;
+        width: 75%;
+        font-size: 20px;
+    }
+
+    .imgProduct{
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+    
+    .card{
+        max-width: 30%;
+        display: flex;
+        flex-direction: column;
+        padding: 2% 0%;
+        height: 410px;
+        width: 40%;
+        background-color:aliceblue;
+        color:rgb(0, 0, 0);
+        margin: 0% 0% 0% 3%;
+        border: 1px solid rgb(176, 176, 176);
+    }
+
+    .market{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: orange;
+        padding: 5% 0%;
+    }
+
+    .market div{
+        border-radius: 20px;
+        margin-bottom: 3%;
+    }
+    
+    .card article{
+        height: 50%;
+        width: 50%;
+        border-radius: 10px;
+        margin-right: 30%;
+    }
+    
+    h2{
+        color: orange;
+    }
+
+    .precio{
+        font-size: 18px;
+        color: #2a363b;
+    }
+    
+    .botonCompra{
+        background-color: orangered;
+        padding: 5%;
+        color:aliceblue;
+        border-radius: 12px;
+        margin-left: 0%;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .textoProducto{
+        background-color:aliceblue;
+        width: 75%;
+        font-size: 20px;
+    }
+
+    .imgProduct{
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+    
+    .card{
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        padding: 0% 0%;
+        height: 380px;
+        width: 40%;
+        background-color:aliceblue;
+        color:rgb(0, 0, 0);
+        margin: 0% 0% 0% 3%;
+        border: 1px solid rgb(176, 176, 176);
+    }
+
+    .market{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: orange;
+        padding: 5% 0%;
+    }
+
+    .market div{
+        border-radius: 20px;
+        margin-bottom: 3%;
+    }
+    
+    .card article{
+        height: 50%;
+        width: 50%;
+        border-radius: 10px;
+        margin-right: 30%;
+    }
+    
+    h2{
+        color: orange;
+    }
+
+    .precio{
+        font-size: 25px;
+        color: #2a363b;
+    }
+    
+    .botonCompra{
+        background-color: orangered;
+        padding: 5%;
+        color:aliceblue;
+        border-radius: 12px;
+        margin-left: 10%;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .textoProducto{
+        background-color:aliceblue;
+        width: 75%;
+        font-size: 20px;
+    }
+
+    #antiparasitario{
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1460px) {
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        padding: 1% 0%;
+        height: 440px;
+        width: 30%;
+        background-color:aliceblue;
+        color:rgb(0, 0, 0);
+        margin: 0% 0% 0% 2.5%;
+        border: 1px solid rgb(176, 176, 176);
+    }
+
+    .market{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: orange;
+        padding: 5% 0%;
+    }
+
+    .market div{
+        border-radius: 20px;
+        margin-bottom: 3%;
+    }
+    
+    .card article{
+        height: 50%;
+        width: 50%;
+        border-radius: 10px;
+        margin-right: 30%;
+    }
+    
+    h2{
+        color: orange;
+    }
+
+    .precio{
+        font-size: 25px;
+        color: #2a363b;
+    }
+    
+    .botonCompra{
+        background-color: orangered;
+        padding: 5%;
+        color:aliceblue;
+        border-radius: 12px;
+        margin-left: 8%;
+        font-size: 25px;
+        text-decoration: none;
+    }
+    
+    .textoProducto{
+        background-color:aliceblue;
+        width: 75%;
+        font-size: 22px;
+    }
+
+    #antiparasitario{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1460px) and (max-width: 1740px) {
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        padding: 1% 0%;
+        height: 570px;
+        width: 30%;
+        background-color:aliceblue;
+        color:rgb(0, 0, 0);
+        margin: 0% 0% 0% 4.5%;
+        border: 1px solid rgb(176, 176, 176);
+    }
+
+    .market{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: orange;
+        padding: 5% 0%;
+    }
+
+    .market div{
+        border-radius: 20px;
+        margin-bottom: 3%;
+    }
+    
+    .card article{
+        height: 50%;
+        width: 50%;
+        border-radius: 10px;
+        margin-right: 30%;
+    }
+    
+    h2{
+        color: orange;
+    }
+
+    .precio{
+        font-size: 35px;
+        color: #2a363b;
+    }
+    
+    .botonCompra{
+        background-color: orangered;
+        padding: 5%;
+        color:aliceblue;
+        border-radius: 12px;
+        margin-left: 5%;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    
+    .textoProducto{
+        background-color:aliceblue;
+        width: 75%;
+        font-size: 29px;
+    }
+
+    #antiparasitario{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1740px) and (max-width: 2000px) {
+
+    .card{
+        max-width: 25%;
+        display: flex;
+        flex-direction: column;
+        padding: 1% 0%;
+        height: 590px;
+        background-color:aliceblue;
+        color:rgb(0, 0, 0);
+        margin: 0% 0% 0% 6%;
+        border: 1px solid rgb(176, 176, 176);
+    }
+
+    .market{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: orange;
+        padding: 5% 0%;
+    }
+
+    .market div{
+        border-radius: 20px;
+        margin-bottom: 3%;
+    }
+    
+    .card article{
+        height: 50%;
+        width: 50%;
+        border-radius: 10px;
+        margin-right: 30%;
+    }
+    
+    h2{
+        color: orange;
+    }
+
+    .precio{
+        font-size: 30px;
+        color: #2a363b;
+    }
+    
+    .botonCompra{
+        background-color: orangered;
+        padding: 5%;
+        color:aliceblue;
+        border-radius: 12px;
+        margin-left: 15%;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    
+    .textoProducto{
+        background-color:aliceblue;
+        width: 75%;
+        font-size: 29px;
+    }
+
+    .imgProduct{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1800px){
+    
+    .card{
+        max-width: 25%;
+        display: flex;
+        flex-direction: column;
+        padding: 1% 0%;
+        height: 590px;
+        background-color:aliceblue;
+        color:rgb(0, 0, 0);
+        margin: 0% 0% 0% 6%;
+        border: 1px solid rgb(176, 176, 176);
+    }
+
+    .market{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: orange;
+        padding: 5% 0%;
+    }
+
+    .market div{
+        border-radius: 20px;
+        margin-bottom: 3%;
+    }
+    
+    .card article{
+        height: 50%;
+        width: 50%;
+        border-radius: 10px;
+        margin-right: 30%;
+    }
+    
+    h2{
+        color: orange;
+    }
+
+    .precio{
+        font-size: 30px;
+        color: #2a363b;
+    }
+    
+    .botonCompra{
+        background-color: orangered;
+        padding: 5%;
+        color:aliceblue;
+        border-radius: 12px;
+        margin-left: 15%;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    
+    .textoProducto{
+        background-color:aliceblue;
+        width: 75%;
+        font-size: 29px;
+    }    
+    
+    #antiparasitario{
+        width: 100%;
+        border-radius: 10px;
+    }    
+    
+}    
+
+/* OPINIONES */
+
+@media screen and (max-width: 425px){
+    #cardOpiniones{
+        display: flex;
+        justify-content: center;
+        border-radius: 30px;
+        
+    }
+    
+    .opiniones{
+        background-color: #219ebc;
+        padding: 15px 10px;
+        height: 280px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: scroll;
+    }
+    
+    #opinion1{
+        background-color: aliceblue;
+        height: 250px;
+        width: 307px;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+    
+    #opinion2{
+        background-color: aliceblue;
+        height: 250px;
+        width: 307px;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+    
+    #opinion3{
+        background-color: aliceblue;
+        height: 250px;
+        width: 307px;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        justify-content: space-between;
+        margin: 0px
+    }
+    
+    #miley{
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 770px){
+    #cardOpiniones{
+        display: flex;
+        justify-content: center;
+        border-radius: 30px;
+    }    
+    
+    .opiniones{
+        background-color: #219ebc;
+        padding: 15px 10px;
+        height: 280px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }    
+    
+    #opinion1{
+        background-color: aliceblue;
+        height: 250px;
+        width: 210px;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        justify-content: space-between;
+    }    
+    
+    #opinion2{
+        background-color: aliceblue;
+        height: 250px;
+        width: 210px;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        justify-content: space-between;
+    }    
+    
+    #opinion3{
+        background-color: aliceblue;
+        height: 250px;
+        width: 210px;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        justify-content: space-between;
+    }    
+    
+    #miley{
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }    
+}    
+
+
+@media screen and (min-width: 770px) and (max-width: 10390px){
+    #cardOpiniones{
+        display: flex;
+        justify-content: center;
+        border-radius: 30px;
+    }    
+    
+    .opiniones{
+        background-color: #219ebc;
+        padding: 15px 10px;
+        height: 280px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }    
+    
+    #opinion1{
+        background-color: aliceblue;
+        height: 250px;
+        width: 30%;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        justify-content: space-between;
+    }    
+    
+    #opinion2{
+        background-color: aliceblue;
+        height: 250px;
+        width: 30%;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        justify-content: space-between;
+    }    
+    
+    #opinion3{
+        background-color: aliceblue;
+        height: 250px;
+        width: 30%;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        justify-content: space-between;
+    }    
+    
+    #miley{
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }    
+}    
+
+
+
+
+
+@media screen and (min-width: 425px) {
+    #botonRestart{
+        align-self: self-end;
+        margin-right: 20px;
+        width: 10%;
+        height: 30px;
+        font-size: 30px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+    
+    footer{
+        background-color: #023047;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;;
+        padding-top: 5%;
+    }
+    
+    footer div p{
+        margin: 1.5%;
+        width: 95%;
+    }
+    
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        color: aliceblue;
+        margin-bottom: 5%;
+        max-width: 500px;
+        margin-top: 20px;
+    }
+    
+    #enlaceEnvio{
+        color: orange;
+        font-size: 20px;
+    }
+    
+    #enlaceEnvio:hover{
+        font-size: 25px;
+        color: orangered;
+    }
+    
+    /* FORMULARIOS */
+    
+    #preguntas{
+        max-width:  600px;
+    }
+    
+    #contacto{
+        margin-bottom: 1%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+        width: 140%;
+    }
+    #name{
+        border-radius: 12px;
+        color:#023047;
+        padding: 2%;
+        width: 100%;
+    }
+    
+    #dudas{
+        border-radius: 12px;
+        width: 100%;
+        height: 100px;
+        padding: 2%;
+    }
+    #email{
+        border-radius: 12px;
+        padding: 2%;
+        width: 100%;
+    }
+    #submit{
+        border-radius: 8px;
+        padding: 4% 7%;
+        font-size: 20px;
+        background-color: orangered;
+        color: aliceblue;
+    }
+    
+    #submit:hover{
+        border-radius: 6px;
+        padding: 4% 7%;
+        font-size: 20px;
+        background-color:aliceblue;
+        color:#023047;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    #botonRestart{
+        align-self: self-end;
+        margin-right: 20px;
+        width: 10%;
+        height: 30px;
+        font-size: 30px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+    
+    footer{
+        background-color: #023047;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        padding-top: 5%;
+    }
+    
+    footer div p{
+        margin: 1.5%;
+        width: 95%;
+    }
+    
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        color: aliceblue;
+        margin-bottom: 5%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+    
+    #enlaceEnvio{
+        color: orange;
+        font-size: 20px;
+    }
+    
+    #enlaceEnvio:hover{
+        font-size: 25px;
+        color: orangered;
+    }
+    
+    /* FORMULARIOS */
+    
+    #preguntas{
+        max-width:  270px;
+    }
+    
+    #contacto{
+        margin-bottom: 1%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+        width: 130%;
+    }
+    #name{
+        border-radius: 12px;
+        color:#023047;
+        padding: 2%;
+        width: 100%;
+    }
+    
+    #dudas{
+        border-radius: 12px;
+        width: 100%;
+        height: 100px;
+        padding: 2%;
+    }
+    #email{
+        border-radius: 12px;
+        padding: 2%;
+        width: 100%;
+    }
+    #submit{
+        border-radius: 8px;
+        padding: 4% 7%;
+        font-size: 20px;
+        background-color: orangered;
+        color: aliceblue;
+    }
+    
+    #submit:hover{
+        border-radius: 6px;
+        padding: 4% 7%;
+        font-size: 20px;
+        background-color:aliceblue;
+        color:#023047;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #botonRestart{
+        align-self: self-end;
+        margin-right: 20px;
+        width: 10%;
+        height: 30px;
+        font-size: 30px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+    
+    footer{
+        background-color: #023047;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding-top: 5%;
+    }
+    
+    footer div p{
+        margin: 1.5%;
+        width: 85%;
+        font-size: 23px;
+    }
+    
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        color: aliceblue;
+        margin-bottom: 5%;
+        max-width: 500px;
+        margin-top: 20px;
+    }
+    
+    #enlaceEnvio{
+        color: orange;
+        font-size: 20px;
+    }
+    
+    #enlaceEnvio:hover{
+        font-size: 25px;
+        color: orangered;
+    }
+    
+    /* FORMULARIOS */
+    
+    #preguntas{
+        max-width:  270px;
+    }
+    
+    #contacto{
+        margin-bottom: 1%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+        width: 150%;
+    }
+    #name{
+        border-radius: 12px;
+        color:#023047;
+        padding: 3%;
+        width: 100%;
+    }
+    
+    #dudas{
+        border-radius: 12px;
+        width: 100%;
+        height: 100px;
+        padding: 2%;
+    }
+
+    #contacto label{
+        font-size: 25px;
+    }
+
+    #email{
+        border-radius: 12px;
+        padding: 3%;
+        width: 100%;
+    }
+    #submit{
+        border-radius: 8px;
+        padding: 4% 7%;
+        font-size: 30px;
+        background-color: orangered;
+        color: aliceblue;
+        margin-top: 20px;
+    }
+    
+    #submit:hover{
+        border-radius: 6px;
+        padding: 4% 7%;
+        font-size: 30px;
+        background-color:aliceblue;
+        color:#023047;
+    }
+
+    #contacto label{
+        font-size: 25px;
+    }
+
+}
+
+
+@media screen and (min-width: 1440px) {
+    #botonRestart{
+        align-self: self-end;
+        margin-right: 20px;
+        width: 10%;
+        height: 30px;
+        font-size: 30px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+    
+    footer{
+        background-color: #023047;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-top: 5%;
+        justify-content: space-around;
+    }
+    
+    footer div p{
+        margin: 1.5%;
+        width: 95%;
+        font-size: 25px;
+    }
+    
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        color: aliceblue;
+        margin-bottom: 5%;
+        max-width: 500px;
+        margin-top: 20px;
+    }
+    
+    #enlaceEnvio{
+        color: orange;
+        font-size: 20px;
+    }
+    
+    #enlaceEnvio:hover{
+        font-size: 25px;
+        color: orangered;
+    }
+    
+    /* FORMULARIOS */
+    
+    #preguntas{
+        max-width:  270px;
+    }
+    
+    #contacto{
+        margin-bottom: 1%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+        width: 190%;
+    }
+    #name{
+        border-radius: 12px;
+        color:#023047;
+        padding: 3%;
+        width: 100%;
+    }
+    
+    #dudas{
+        border-radius: 12px;
+        width: 100%;
+        height: 100px;
+        padding: 2%;
+    }
+
+    #contacto label{
+        font-size: 25px;
+    }
+
+    #email{
+        border-radius: 12px;
+        padding: 3%;
+        width: 100%;
+    }
+    #submit{
+        border-radius: 8px;
+        padding: 4% 7%;
+        font-size: 30px;
+        background-color: orangered;
+        color: aliceblue;
+        margin-top: 20px;
+    }
+    
+    #submit:hover{
+        border-radius: 6px;
+        padding: 4% 7%;
+        font-size: 30px;
+        background-color:aliceblue;
+        color:#023047;
+    }
+}
+
+
+
+
+
